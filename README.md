@@ -23,7 +23,7 @@ This is a Telegram bot built using Pyrogram that offers a variety of creative an
 * Make sure you have Python and Pyrogram installed. You can find installation instructions on the Pyrogram documentation: [https://docs.pyrogram.org/](https://docs.pyrogram.org/)
 * Clone this repository: `git clone https://github.com/swadhinbiswas/AIBOT`
 * Install project dependencies: `pip install -r requirements.txt` (assuming you have a requirements.txt file listing your project dependencies)
-* Run the bot using `python your_bot_script.py` (replace `your_bot_script.py` with the actual script name)
+* Run the bot using `python main.py` (replace `your_bot_script.py` with the actual script name)
 
 **Usage**
 
@@ -33,7 +33,7 @@ For detailed instructions on how to use each feature, refer to the bot's in-app 
 
 For more information, please contact the developer:
 
-* Telegram: [@thepr0fessor](https://t.me/thepr0fessor) (replace `<user_id>` with the actual user ID)
+* Telegram: [@professor_idx](https://t.me/professor_idx) (replace `<user_id>` with the actual user ID)
 * GitHub: [link](https://github.com/swadhinbiswas/AIBOT)
 
 **Note:**

@@ -10,18 +10,17 @@ imagelink=f"{photspath}/{n}.png"
 
 
 def text_to_image(text):
-  print(text)
   URL=f"https://api.cloudflare.com/client/v4/accounts/{settings.CLOUDFLARE_ID}/ai/run/@cf/lykon/dreamshaper-8-lcm"
   headers = {
         "Authorization": f"Bearer {settings.CLOUDFLARE_API_KEY}",
         "Content-Type": "application/json"
     }
+  
   promt={
     "prompt": text,
   }
   
   response = requests.post(URL, headers=headers, json=promt)
-  print(response.content)
   try:
     with open(imagelink, "wb") as f:
       f.write(response.content)

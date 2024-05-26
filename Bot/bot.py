@@ -64,7 +64,7 @@ class Bot:
         if message.text=="/imagine2":
           
             message.reply_text(f"""{name}This is the imagine2 command
-                           <b>👉🏻Example:</b>
+                            <b>👉🏻This Stage is under Development</b>
                            
                            """)
         else:
@@ -77,7 +77,53 @@ class Bot:
                               
                               
                               """)
-      
+  @app.on_message(filters.command("meme"))
+  def meme(app, message):
+        name=message.from_user.username
+        message.reply_text(f"""{name}This is the meme command
+                            <b>👉🏻This Stage is under Development</b>
+                           
+                           """)
+  @app.on_message(filters.command("translate"))
+  def translate(app, message):
+        name=message.from_user.username
+        message.reply_text(f"""{name}This is the translate command
+                            <b>👉🏻This Stage is under Development</b>
+                           
+                           """)
+        
+  @app.on_message(filters.command("audio"))
+  def audio(app, message):
+        name=message.from_user.username
+        message.reply_text(f"""{name}This is the audio command
+                            <b>👉🏻This Stage is under Development</b>
+                           
+                           """)
+        
+        
+  @app.on_message(filters.command("video"))
+  def video(app, message):
+        name=message.from_user.username
+        message.reply_text(f"""{name}This is the video command
+                            <b>👉🏻This Stage is under Development</b>
+                           
+                           """)
+        
+  @app.on_message(filters.command("image"))
+  def image(app, message):
+        name=message.from_user.username
+        message.reply_text(f"""{name}This is the image command
+                            <b>👉🏻This Stage is under Development</b>
+                           
+                           """)
+        
+  @app.on_message(filters.command("speedtest"))
+  def speedtest(app, message):
+        name=message.from_user.username
+        message.reply_text(f"""{name}This is the speedtest command
+                            <b>👉🏻This Stage is under Development</b>
+                           
+                           """)
   
   
 

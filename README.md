@@ -18,7 +18,7 @@ This is a Telegram bot built using Pyrogram that offers a variety of creative an
     * **Image Manipulation:** Perform actions like resizing, cropping, or applying filters (depending on implementation).
     * **Text Manipulation:** Explore functionalities like summarization, paraphrasing, or style changes (details to be confirmed).
 
-**Getting Started (**This section might require adjustments based on your setup)**
+**Get Strated**
 
 * Make sure you have Python and Pyrogram installed. You can find installation instructions on the Pyrogram documentation: [https://docs.pyrogram.org/](https://docs.pyrogram.org/)
 * Clone this repository: `git clone https://github.com/swadhinbiswas/AIBOT`
@@ -35,6 +35,8 @@ For more information, please contact the developer:
 
 * Telegram: [@professor_idx](https://t.me/professor_idx) (replace `<user_id>` with the actual user ID)
 * GitHub: [link](https://github.com/swadhinbiswas/AIBOT)
+
+* Mail : swadhinbiswas.dev@gmail.com
 
 **Note:**
 

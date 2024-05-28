@@ -1,8 +1,9 @@
 from pyrogram import Client, filters
 from Bot.settings.setting import settings
 from Bot.API.photogen2 import text_to_image
+from Bot.API.photogen1 import text_to_stabilityimage
 from Bot.API.texttotext import texttotext
-from Bot.BotFunction.helper import help_message, strat_maessage, imagine_message
+from Bot.BotFunction.helper import help_message, strat_maessage, imagine_message,ima
 
 
 
@@ -60,23 +61,17 @@ class Bot:
   @app.on_message(filters.command("imagine2"))
   def imagine2(app, message):
         name=message.from_user.username
+        text=message.text
         
         if message.text=="/imagine2":
+            name=message.from_user.username
           
-            message.reply_text(f"""{name}This is the imagine2 command
-                            <b>👉🏻This Stage is under Development</b>
-                           
-                           """)
+            message.reply_text(imagine_message(name))
         else:
           message.reply_text("Please wait while I convert your image to text.")
           message.reply_text("This may take a while.")
-          message.delete()
-          # imagelink=text_to_image(message.text)
-          message.reply_photo(f"""
-                              <b>👉🏻This Stage is under Development</b>
-                              
-                              
-                              """)
+          image=text_to_stabilityimage(text)
+          message.send_photo(image)
   @app.on_message(filters.command("meme"))
   def meme(app, message):
         name=message.from_user.username
@@ -125,5 +120,5 @@ class Bot:
                            
                            """)
   
-  
+
 

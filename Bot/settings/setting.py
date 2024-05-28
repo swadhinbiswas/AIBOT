@@ -10,6 +10,8 @@ class Settings:
   URL=f"https://api.cloudflare.com/client/v4/accounts/{CLOUDFLARE_ID}/ai/run/@hf/google/gemma-7b-it"
   TELEGRAM_API_KEY = os.getenv('TELEGRAM_API_KEY')
   TELEGRAM_HASH=os.getenv('TELEGRAM_HASH')
+  CLOUDFLARE_ID2=os.getenv('CLOUDFLARE_ID2')
+  CLOUDFLARE_API_KEY2=os.getenv('CLOUDFLARE_API_KEY2')
 
 
 

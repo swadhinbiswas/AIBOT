@@ -67,6 +67,20 @@ or /imagine2 A beautiful day in the city.
 
 """
 
+def imagine_message(name):
+   return f"""<b><i>Hi! @{name}👋 </i></b>
+Please enter the text you want to convert to image.
+
+<b>👉🏻Example:</b>
+
+/imagine A beautiful day in the city.
+or /imagine2 A beautiful day in the city.
+
+
+<i>{devdeveloper_message()}</i>
+
+"""
+
 def meme_message(name):
   return f"""<b><i>Hi! @{name}👋 </i>
 Please enter the text you want to convert to meme.

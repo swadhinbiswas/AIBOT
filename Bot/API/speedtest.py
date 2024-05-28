@@ -1,0 +1,2 @@
+from speedtest import Speedtest
+

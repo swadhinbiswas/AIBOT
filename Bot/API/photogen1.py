@@ -1,10 +1,11 @@
 from Bot.settings.setting import settings
+# from ..settings.setting import settings
 import os
 import requests
 import json
 n=1
 photspath=os.path.join(os.path.dirname(__file__), "picture")
-imagelink=f"{photspath}/{n}.png"
+image=f"{photspath}/{n}.png"
 
 
 
@@ -22,10 +23,10 @@ def text_to_stabilityimage(text):
   
   response = requests.post(URL, headers=headers, json=promt)
   try:
-    with open(imagelink, "wb") as f:
+    with open(image, "wb") as f:
       f.write(response.content)
   except Exception as e:
     print(e)
   finally:
-    return  imagelink
+    return  image
   

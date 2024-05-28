@@ -39,7 +39,7 @@ def help_message(name):
 cmd : /start[To start the bot]
 cmd : /help[To get help]
 cmd : /imagine [To convert text to image]
-cmd : /imagine2 [To convert image to text]
+cmd : /img [To convert image to text]
 cmd : /meme [To create meme]
 cmd : /translate [To translate text]
 cmd : /audio [To convert text to audio]

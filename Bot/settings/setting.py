@@ -30,6 +30,8 @@ class Settings:
     "threshold": "BLOCK_MEDIUM_AND_ABOVE",
   },
 ]
+  GEMINI_API_KEY=os.getenv('GEMINI_API_KEY')
+  
 
 
 

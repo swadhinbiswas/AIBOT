@@ -1,5 +1,4 @@
 from Bot.settings.setting import settings
-import os
 import google.generativeai as genai
 
 
@@ -45,7 +44,7 @@ class Geminiapp:
     
   def geminiapp(self,text:str,img):
 
-    response = self.model.generate_content(text, img)
+    response = self.model.generate_content([text, img])
     
     return response
   

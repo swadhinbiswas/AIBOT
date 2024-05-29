@@ -4,6 +4,8 @@ from Bot.API.photogen2 import text_to_image
 from Bot.API.photogen1 import text_to_stabilityimage
 from Bot.API.texttotext import texttotext
 from Bot.BotFunction.helper import help_message, strat_maessage, imagine_message
+from Bot.API.Geminiapp import Geminiapp
+import os
 
 
 
@@ -108,9 +110,19 @@ class Bot:
                             <b>👉🏻This Stage is under Development</b>
                            
                            """)
-        
-        
-  @app.on_message(filters.text)
+     
+               
+  
+  @app.on_message(filters.all & filters.command("see"))
+  async def photo_handler(client, message):
+    user_images={}
+    # Store the photo's file ID with the user's ID as key
+    user_images[message.from_user.id] = message.photo.file_id
+    await message.reply_text("Photo received. Now, send /see to get the photo's file ID.")
+    await message.reply_text("Please wait while I am downloading the image")
+    await message.reply_text(user_images[message.from_user.id])
+
+  @app.on_message(filters.text) 
   def text_to_text(app, message):
         result=texttotext(message.text)
         message.reply_text(result)

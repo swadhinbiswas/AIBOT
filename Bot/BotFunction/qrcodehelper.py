@@ -13,10 +13,11 @@ def get_qrcodeicon(text):
           
           
 
-def set_qricon(text:str,icon:str):
-    split_text = text.split(".")
-    with open(filepath, "r") as f:
-        data = json.load(f)
-        data[split_text[1]] = icon
-    with open(filepath, "w") as f:
-        json.dump(data, f, indent=4)
+
+
+
+
+
+
+
+

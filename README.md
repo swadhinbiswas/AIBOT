@@ -18,6 +18,31 @@ This is a Telegram bot built using Pyrogram that offers a variety of creative an
     * **Image Manipulation:** Perform actions like resizing, cropping, or applying filters (depending on implementation).
     * **Text Manipulation:** Explore functionalities like summarization, paraphrasing, or style changes (details to be confirmed).
 
+
+
+
+### Checklist
+
+
+- [ ] Gemini
+- [ ] ChatGpt
+
+- [x] Text To Image
+- [x] Link to Qrcode
+- [ ] Video To Gif
+- [ ] Unlock PDF
+- [ ] Word to PDF
+- [ ] Exel to PDF
+- [ ] Proteted PDF
+- [ ] Encryption Text
+
+
+
+
+- [ ] Object Detection
+- [x] ChatBot
+
+
 **Get Strated**
 
 * Make sure you have Python and Pyrogram installed. You can find installation instructions on the Pyrogram documentation: [https://docs.pyrogram.org/](https://docs.pyrogram.org/)

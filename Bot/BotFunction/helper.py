@@ -116,5 +116,17 @@ than replay with  the command /audio to convert audio to text.
 
 """
 
+def twitter_message(name): return f"""<b><i>Hi! @{name}👋 </i>
+Please Provide Me a link of the twitter video you want to download.
+
+<b>👉🏻Example:</b>
+
+ cmd : /twitter <link of the twitter >
+
+
+
+<i>{devdeveloper_message()}</i>
+
+"""
 
 

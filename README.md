@@ -28,7 +28,8 @@ This is a Telegram bot built using Pyrogram that offers a variety of creative an
 - [ ] ChatGpt
 
 
-- [x] Text To Image  |   - [x] Link to Qrcode
+| - [x] Text To Image  |   - [x] Link to Qrcode |
+
 - [ ] Video To Gif   |   - [ ] Unlock PDF
 - [ ] Word to PDF
 - [ ] Exel to PDF

@@ -1,5 +1,6 @@
 from pyrogram import Client, filters
 from Bot.settings.setting import settings
+from Bot.BotFunction.urlshortner import UrlShortner
 from Bot.API.photogen2 import text_to_image
 from Bot.API.photogen1 import text_to_stabilityimage
 from Bot.API.texttotext import texttotext
@@ -139,6 +140,14 @@ class Bot:
               await message.reply_video(filename)
               if os.path.exists(filename):
                 os.remove(filename)
+                
+  @app.on_message(filters.command("urlshortner"))
+  def urlshortner(app, message):
+        name=message.from_user.username
+        message.reply_text(f"""{name}This is the urlshortner command
+                            <b>👉🏻This Stage is under Development</b>
+                           
+                           """)
               
 
   @app.on_message(filters.text) 

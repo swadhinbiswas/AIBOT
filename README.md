@@ -47,7 +47,10 @@ This is a Telegram bot built using Pyrogram that offers a variety of creative an
 - [x] ChatBot
 - [x] Twitter Downloader
 - [ ] Download Progress Bar
-- [ ] Intragram downloader 
+- [ ] Intragram downloader
+- [x] Url Shortner
+
+
 
 
 

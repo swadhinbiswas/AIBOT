@@ -38,7 +38,8 @@ This is a Telegram bot built using Pyrogram that offers a variety of creative an
 - [ ] Word to PDF
 - [ ] Exel to PDF
 - [ ] Proteted PDF
-- [ ] Encryption Text
+- [ ] Encryption File
+
 
 
 
@@ -49,6 +50,12 @@ This is a Telegram bot built using Pyrogram that offers a variety of creative an
 - [ ] Download Progress Bar
 - [ ] Intragram downloader
 - [x] Url Shortner
+- [x] Text To MorseCode
+- [ ] Encryption Text
+- [ ] Decrepction Text
+- [ ] Ip Track
+- [ ] I know What Torrent You Download
+- [ ] Find Email Across The Internet
 
 
 

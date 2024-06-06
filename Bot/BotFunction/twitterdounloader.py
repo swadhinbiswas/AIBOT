@@ -8,6 +8,15 @@ from tqdm import tqdm
 
 def download_video(url,filename):
   
+  """
+  
+  Arguments:
+  This function downloads a video from a given URL.
+  url: str: The URL of the video to be downloaded.
+  filename: str: The name of the file to be saved.
+  return: str: The name of the file saved.
+  """
+  
   responce = requests.get(url,stream=True)
   # total_size = int(responce.headers.get('content-length',0))
   block_size = 1024

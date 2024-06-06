@@ -148,6 +148,14 @@ class Bot:
                             <b>👉🏻This Stage is under Development</b>
                            
                            """)
+        
+  @app.on_message(filters.video & filters.command("gif"))
+  def gif(app, message):
+        name=message.from_user.username
+        message.reply_text(f"""{name}This is the gif command
+                            <b>👉🏻This Stage is under Development</b>
+                           
+                           """)
               
 
   @app.on_message(filters.text) 

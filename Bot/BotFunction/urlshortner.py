@@ -11,6 +11,15 @@ class UrlShortner:
 
         
     def shorten(self, url):
+        
+        
+        """
+        Shorten the given URL
+        :param url: URL to shorten
+        
+        :return: Shortened URL
+        
+        """
         response = requests.post(self.url, data={"url": url}, headers=self.headers)
         if response.status_code == 200:
             return response.json()

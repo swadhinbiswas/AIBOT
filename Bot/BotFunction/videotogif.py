@@ -13,3 +13,5 @@ def video_to_gif(nameoffile):
   
   clip.write_gif(f"{writeloc}/output.gif")
   return f"{writeloc}/output.gif"
+
+

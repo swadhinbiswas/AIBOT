@@ -32,6 +32,8 @@ class Settings:
 ]
   GEMINI_API_KEY=os.getenv('GEMINI_API_KEY')
   
+  SCREENSHOT_API_KEY=os.getenv('SCREENSHOT_API_KEY')
+  
 
 
 

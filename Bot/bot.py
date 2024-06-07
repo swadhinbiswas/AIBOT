@@ -8,6 +8,8 @@ from Bot.BotFunction.twitterdounloader import twitter_download
 from Bot.BotFunction.helper import help_message, strat_maessage, imagine_message,twitter_message
 from Bot.API.Geminiapp import Geminiapp
 import os
+from Bot.BotFunction.urlshortner import UrlShortner
+from Bot.BotFunction.morsecode import txttomorsecode
 
 
 
@@ -156,6 +158,24 @@ class Bot:
                             <b>👉🏻This Stage is under Development</b>
                            
                            """)
+        
+        
+  @app.on_message(filters.command("morsecode"))
+  async def morsecode(app, message):
+        name=message.from_user.username
+        await message.reply_text(f""" {name}Hold On a second
+                            <b>👉🏻For more cmd : /help </b>
+                           
+                           """)
+        print(message.text)
+        
+        text=message.text.split(" ")[1]
+        result=txttomorsecode(text)
+        await message.reply_text(result)
+        
+        
+        
+        
               
 
   @app.on_message(filters.text) 

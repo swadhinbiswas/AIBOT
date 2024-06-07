@@ -56,6 +56,7 @@ This is a Telegram bot built using Pyrogram that offers a variety of creative an
 - [ ] Ip Track
 - [ ] I know What Torrent You Download
 - [ ] Find Email Across The Internet
+- [x] ScreenShort From Website
 
 
 
@@ -89,3 +90,6 @@ For more information, please contact the developer:
     * License information
     * Troubleshooting tips
     * Example usage of the bot commands
+
+
+![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/username/repository&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)

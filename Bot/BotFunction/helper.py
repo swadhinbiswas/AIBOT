@@ -44,6 +44,13 @@ cmd : /meme [To create meme]
 cmd : /translate [To translate text]
 cmd : /audio [To convert text to audio]
 cmd : /audio[dalle] [To convert audio to text]
+cmd : /twitter [To download twitter video]
+cmd : /qrcode [To generate qr code]
+cmd : /morsecode [To convert text to morse code]
+cmd : /morsedecode [To convert morse code to text]
+cmd : /ocr [To extract text from image]
+cmd : /encrypt [To encrypt text]
+cmd : /decrypt [To decrypt text]
 </b>
 <i>{devdeveloper_message()}</i>
 

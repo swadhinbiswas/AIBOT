@@ -10,6 +10,7 @@ from Bot.API.Geminiapp import Geminiapp
 import os
 from Bot.BotFunction.urlshortner import UrlShortner
 from Bot.BotFunction.morsecode import txttomorsecode
+from Bot.BotFunction.qrcodehelper import createqr
 
 
 
@@ -125,6 +126,19 @@ class Bot:
     await message.reply_text("Photo received. Now, send /see to get the photo's file ID.")
     await message.reply_text("Please wait while I am downloading the image")
     await message.reply_text(user_images[message.from_user.id])
+    
+    
+  @app.on_message(filters.command("qrcode"))
+  async def qrcode(app, message):
+        if message.text=="/qrcode":
+          await message.reply_text("Please provide the url after the command")
+        else:
+             url=message.text.split(" ")[1]
+             img=createqr(url)
+             await message.reply_photo(img)
+             
+             os.remove(img) 
+             
     
     
   @app.on_message(filters.command("twitter"))

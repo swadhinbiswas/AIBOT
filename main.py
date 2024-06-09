@@ -18,6 +18,7 @@ logger = getLogger(__name__)
 
 app=Bot.app
       
-if __name__ == "__main__":
+if __name__=="__main__":
+  logger.info("Bot is running")
   printtext()
   app.run()

@@ -7,10 +7,3 @@ def txttomorsecode(text):
         return response.json()['contents']['translated']
     else:
         return "Error"
-
-
-
-
-
-rext=txttomorsecode("Hello")
-print(rext)

@@ -15,6 +15,5 @@ def printtext():
   
   
 
-# def logging():
 
-  
+printtext()

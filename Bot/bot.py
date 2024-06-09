@@ -158,12 +158,13 @@ class Bot:
                 os.remove(filename)
                 
   @app.on_message(filters.command("urlshortner"))
-  def urlshortner(app, message):
+  async def urlshortner(app, message):
         name=message.from_user.username
-        message.reply_text(f"""{name}This is the urlshortner command
-                            <b>👉🏻This Stage is under Development</b>
-                           
-                           """)
+        await message.reply_text(f"""{name}Hold On a second""")
+        
+        x=UrlShortner().shorten(message.text.split(" ")[1])
+        await message.reply_text(x)
+        
         
   @app.on_message(filters.video & filters.command("gif"))
   def gif(app, message):
@@ -181,7 +182,6 @@ class Bot:
                             <b>👉🏻For more cmd : /help </b>
                            
                            """)
-        print(message.text)
         
         text=message.text.split(" ")[1]
         result=txttomorsecode(text)

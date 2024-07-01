@@ -1,4 +1,5 @@
 from pyrogram import Client, filters
+from pyrogram.types import MenuButtonCommands
 from Bot.settings.setting import settings
 from Bot.BotFunction.urlshortner import UrlShortner
 from Bot.API.photogen2 import text_to_image
@@ -11,6 +12,7 @@ import os
 from Bot.BotFunction.urlshortner import UrlShortner
 from Bot.BotFunction.morsecode import txttomorsecode
 from Bot.BotFunction.qrcodehelper import createqr
+from Bot.API.encrypttext import encrypt_text,decrypt_text,encrypt_image,decrypt_image
 
 
 
@@ -20,8 +22,10 @@ class Bot:
               api_id=settings.TELEGRAM_API_KEY,
               api_hash=settings.TELEGRAM_HASH, 
               bot_token=settings.TELEGRAM_BOT_TOKEN)
-
-
+ 
+  
+  
+#   app.set_chat_menu_button("menu", MenuButtonCommands())
 
   @app.on_message(filters.command("start"))
   def start(app, message):
@@ -71,22 +75,46 @@ class Bot:
   @app.on_message(filters.command("meme"))
   def meme(app, message):
         name=message.from_user.username
-        message.reply_text(f"""{name}This is the meme command
+        
+        if message.text=="/meme":
+          message.reply_text(f"""{name}This is the meme command
+                            <b>👉🏻This Stage is under Development</b>
+                           
+                           """)
+          
+        else: 
+            message.reply_text(f"""{name}This is the meme command
                             <b>👉🏻This Stage is under Development</b>
                            
                            """)
   @app.on_message(filters.command("translate"))
   def translate(app, message):
         name=message.from_user.username
-        message.reply_text(f"""{name}This is the translate command
-                            <b>👉🏻This Stage is under Development</b>
+        
+        if message.text=="/translate":
+              message.reply_text(f"""{name}This is the translate command
+                              <b>👉🏻This Stage is under Development</b>
+                                 
+                                 """)
+              
+        else:
+                  message.reply_text(f"""{name}This is the translate command
+                                 <b>👉🏻This Stage is under Development</b>
                            
                            """)
         
   @app.on_message(filters.command("audio"))
   def audio(app, message):
         name=message.from_user.username
-        message.reply_text(f"""{name}This is the audio command
+        
+        if message.text=="/audio":
+                  message.reply_text(f"""{name}This is the audio command
+                                    <b>👉🏻This Stage is under Development</b>
+                                     
+                                     """)
+                  
+        else:
+             message.reply_text(f"""{name}This is the audio command
                             <b>👉🏻This Stage is under Development</b>
                            
                            """)
@@ -94,38 +122,68 @@ class Bot:
         
   @app.on_message(filters.command("video"))
   def video(app, message):
+        
         name=message.from_user.username
-        message.reply_text(f"""{name}This is the video command
+        
+        if message.text=="/video":
+              message.reply_text(f"""{name}This is the video command
+                              <b>👉🏻This Stage is under Development</b>
+                                 
+                                 """)
+              
+        else:
+              
+            message.reply_text(f"""{name}This is the video command
                             <b>👉🏻This Stage is under Development</b>
                            
                            """)
         
   @app.on_message(filters.command("image"))
   def image(app, message):
-        name=message.from_user.username
-        message.reply_text(f"""{name}This is the image command
-                            <b>👉🏻This Stage is under Development</b>
-                           
-                           """)
+        
+        if message.text=="/image":
+          x=imagine_message(message.from_user.username)
+          message.reply_text(x)
+          
+        else:
+            name=message.from_user.username
+            message.reply_text(f"""{name}This is the image command
+                              <b>👉🏻This Stage is under Development</b>
+                              
+                              """)
         
   @app.on_message(filters.command("speedtest"))
   def speedtest(app, message):
         name=message.from_user.username
-        message.reply_text(f"""{name}This is the speedtest command
+        if message.text=="/speedtest":
+          
+          message.reply_text(f"""{name}This is the speedtest command
                             <b>👉🏻This Stage is under Development</b>
                            
                            """)
+          
+        else:
+          
+            message.reply_text(f"""{name}This is the speedtest command
+                              <b>👉🏻This Stage is under Development</b>
+                              
+                              """)
      
                
   
   @app.on_message(filters.all & filters.command("see"))
   async def photo_handler(client, message):
-    user_images={}
-    # Store the photo's file ID with the user's ID as key
-    user_images[message.from_user.id] = message.photo.file_id
-    await message.reply_text("Photo received. Now, send /see to get the photo's file ID.")
-    await message.reply_text("Please wait while I am downloading the image")
-    await message.reply_text(user_images[message.from_user.id])
+        
+         if message.text=="/see":
+            await message.reply_text("Please provide the photo's file ID after the command")
+            
+         else:
+            user_images={}
+            # Store the photo's file ID with the user's ID as key
+            user_images[message.from_user.id] = message.photo.file_id
+            await message.reply_text("Photo received. Now, send /see to get the photo's file ID.")
+            await message.reply_text("Please wait while I am downloading the image")
+            await message.reply_text(user_images[message.from_user.id])
     
     
   @app.on_message(filters.command("qrcode"))
@@ -160,10 +218,14 @@ class Bot:
   @app.on_message(filters.command("urlshortner"))
   async def urlshortner(app, message):
         name=message.from_user.username
-        await message.reply_text(f"""{name}Hold On a second""")
         
-        x=UrlShortner().shorten(message.text.split(" ")[1])
-        await message.reply_text(x)
+        if message.text=="/urlshortner":
+          await message.reply_text(f"""{name}Please provide the url after the command""")
+        else:
+            await message.reply_text(f"""{name}Hold On a second""")
+            
+            x=UrlShortner().shorten(message.text.split(" ")[1])
+            await message.reply_text(x)
         
         
   @app.on_message(filters.video & filters.command("gif"))
@@ -178,21 +240,47 @@ class Bot:
   @app.on_message(filters.command("morsecode"))
   async def morsecode(app, message):
         name=message.from_user.username
-        await message.reply_text(f""" {name}Hold On a second
-                            <b>👉🏻For more cmd : /help </b>
-                           
-                           """)
         
-        text=message.text.split(" ")[1]
-        result=txttomorsecode(text)
-        await message.reply_text(result)
+        if message.text=="/morsecode":
+              await message.reply_text(f"""{name}Please provide the text after the command""")
+        
+        else:
+            await message.reply_text(f"""{name}Hold On a second""")
+        
+            text=message.text.split(" ")[1]
+            result=txttomorsecode(text)
+            await message.reply_text(result)
         
         
         
-        
-              
-
-  @app.on_message(filters.text) 
+  @app.on_message(filters.command("encrypt"))
+  async def encrypt(app, message):
+            name=message.from_user.username
+            
+            if message.text=="/encrypt":
+              await message.reply_text(f"""{name}Please provide the text after the command""")
+            
+            else:
+                  await message.reply_text(f"""{name}Hold On a second""")
+                  text=message.text.split(" ")[1]
+                  result=encrypt_text(text)
+                  await message.reply_text(result)
+                  
+  @app.on_message(filters.command("decrypt"))
+  async def decrypt(app, message):
+            name=message.from_user.username
+            
+            if message.text=="/decrypt":
+              await message.reply_text(f"""{name}Please provide the text after the command""")
+            
+            else:
+                  await message.reply_text(f"""{name}Hold On a second""")
+                  text=message.text.split(" ")[1]
+                  result=decrypt_text(text)
+                  await message.reply_text(result)
+                  
+                      
+  @app.on_message(filters.text & ~filters.command(["start", "help", "imagine","img","twitter","urlshortner","qrcode","morsecode","encrypt","decrypt","text_to_text","decrypt_image","encrypt_image","gemini","geminiapp"]))
   def text_to_text(app, message):
         result=texttotext(message.text)
         message.reply_text(result)

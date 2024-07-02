@@ -14,6 +14,7 @@ from Bot.BotFunction.morsecode import txttomorsecode
 from Bot.BotFunction.qrcodehelper import createqr
 from Bot.API.encrypttext import encrypt_text,decrypt_text,encrypt_image,decrypt_image
 from Bot.API.iptress import trackip
+from Bot.API.htmltopdf import html_to_pdf
 
 
 
@@ -292,6 +293,34 @@ class Bot:
                   ip=message.text.split(" ")[1]
                   result=trackip(ip)
                   await message.reply_text(result)
+                  
+                  
+  @app.on_message(filters.command("webtopdf"))
+  async def webtopdf(app, message):
+            name=message.from_user.username
+            
+            if message.text=="/webtopdf":
+              await message.reply_text(f"""{name}Please provide the url after the command""")
+            
+            else:
+                  await message.reply_text(f"""{name}Hold On a second""")
+                  url=message.text.split(" ")[1]
+                  result=html_to_pdf(url)
+                  await message.reply_document(result)
+                  
+                  
+  # @app.on_message(filters.command("encrypt_image"))
+  # async def encrypt_image(app, message):
+  #           name=message.from_user.username
+            
+  #           if message.text=="/encrypt_image":
+  #             await message.reply_text(f"""{name}Please provide the image file after the command""")
+            
+  #           else:
+  #                 await message.reply_text(f"""{name}Hold On a second""")
+  #                 image=message.text.split(" ")[1]
+  #                 result=encrypt_image(image)
+  #                 await message.reply_photo(result)
                   
                       
   @app.on_message(filters.text & ~filters.command(["start", "help", "imagine","img","twitter","urlshortner","qrcode","morsecode","encrypt","decrypt","text_to_text","decrypt_image","encrypt_image","gemini","geminiapp"]))

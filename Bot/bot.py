@@ -13,6 +13,7 @@ from Bot.BotFunction.urlshortner import UrlShortner
 from Bot.BotFunction.morsecode import txttomorsecode
 from Bot.BotFunction.qrcodehelper import createqr
 from Bot.API.encrypttext import encrypt_text,decrypt_text,encrypt_image,decrypt_image
+from Bot.API.iptress import trackip
 
 
 
@@ -277,6 +278,19 @@ class Bot:
                   await message.reply_text(f"""{name}Hold On a second""")
                   text=message.text.split(" ")[1]
                   result=decrypt_text(text)
+                  await message.reply_text(result)
+                  
+  @app.on_message(filters.command("iptack"))
+  async def iptack(app, message):
+            name=message.from_user.username
+            
+            if message.text=="/iptack":
+              await message.reply_text(f"""{name}Please provide the ip after the command""")
+            
+            else:
+                  await message.reply_text(f"""{name}Hold On a second""")
+                  ip=message.text.split(" ")[1]
+                  result=trackip(ip)
                   await message.reply_text(result)
                   
                       

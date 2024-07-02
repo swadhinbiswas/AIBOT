@@ -34,6 +34,8 @@ class Settings:
   
   SCREENSHOT_API_KEY=os.getenv('SCREENSHOT_API_KEY')
   
+  HTML2PDF_API_KEY=os.getenv('HTMLTOPDF_API_KEY')
+  
 
 
 

@@ -58,6 +58,7 @@ This is a Telegram bot built using Pyrogram that offers a variety of creative an
 - [ ] Find Email Across The Internet
 - [x] ScreenShort From Website
 - [x] Web to PDF
+- [x] Domain Lookup
 
 
 

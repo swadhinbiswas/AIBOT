@@ -36,6 +36,8 @@ class Settings:
   
   HTML2PDF_API_KEY=os.getenv('HTMLTOPDF_API_KEY')
   
+  HOST_API=os.getenv('HOSTIO')
+  
 
 
 

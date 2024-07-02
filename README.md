@@ -53,7 +53,7 @@ This is a Telegram bot built using Pyrogram that offers a variety of creative an
 - [x] Text To MorseCode
 - [ ] Encryption Text
 - [ ] Decrepction Text
-- [ ] Ip Track
+- [x] Ip Track
 - [ ] I know What Torrent You Download
 - [ ] Find Email Across The Internet
 - [x] ScreenShort From Website

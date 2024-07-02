@@ -1,0 +1,12 @@
+requests
+colorama
+cryptography
+qrcode
+pillow
+moviepy
+beautifulsoup4
+pytube
+pytube3
+pyrogram
+python-dotenv
+

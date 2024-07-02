@@ -334,7 +334,7 @@ class Bot:
       result=domaininfo(domain)
       await message.reply_text(result,parse_mode="MarkdownV2")
                       
-  @app.on_message(filters.text & ~filters.command(["start", "help", "imagine","img","twitter","urlshortner","qrcode","morsecode","encrypt","decrypt","text_to_text","decrypt_image","encrypt_image","gemini","geminiapp"]))
+  @app.on_message(filters.text & ~filters.command(["start", "help", "imagine","img","twitter","urlshortner","qrcode","morsecode","encrypt","decrypt","text_to_text","decrypt_image","encrypt_image","gemini","geminiapp","iptack","webtopdf","dominlookup","speedtest","see","gif","translate","audio","video","image","meme"]))
   def text_to_text(app, message):
         result=texttotext(message.text)
         message.reply_text(result)

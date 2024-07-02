@@ -1,9 +1,8 @@
-import sys
+
 import os
-import re 
 import requests
 import bs4
-from tqdm import tqdm 
+
 
 
 def download_video(url,filename):
@@ -51,7 +50,7 @@ def twitter_download(url):
 
 
 
-twitter_download("https://x.com/i/status/1796541910376759733")
+
 
 
 

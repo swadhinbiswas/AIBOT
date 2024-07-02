@@ -51,7 +51,7 @@ This is a Telegram bot built using Pyrogram that offers a variety of creative an
 - [ ] Intragram downloader
 - [x] Url Shortner
 - [x] Text To MorseCode
-- [ ] Encryption Text
+- [x] Encryption Text
 - [ ] Decrepction Text
 - [x] Ip Track
 - [ ] I know What Torrent You Download

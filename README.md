@@ -42,7 +42,7 @@ This is a Telegram bot built using Pyrogram that offers a variety of creative an
 
 
 ## Security
-- [] Face Search 
+- [ ] Face Search 
 
 
 
@@ -97,3 +97,14 @@ For more information, please contact the developer:
 
 
 ![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/username/repository&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)
+
+
+# HOST
+
+
+## Host On render using webservice
+
+![Render](https://ml.globenewswire.com/Resource/Download/19618237-eb42-4ed2-b7a1-1f56419d1279)
+
+## step:1
+<b> fork the repo and connect your 

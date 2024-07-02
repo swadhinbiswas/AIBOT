@@ -15,6 +15,7 @@ from Bot.BotFunction.qrcodehelper import createqr
 from Bot.API.encrypttext import encrypt_text,decrypt_text,encrypt_image,decrypt_image
 from Bot.API.iptress import trackip
 from Bot.API.htmltopdf import html_to_pdf
+from Bot.API.domaininfo import domaininfo
 
 
 
@@ -321,7 +322,17 @@ class Bot:
   #                 image=message.text.split(" ")[1]
   #                 result=encrypt_image(image)
   #                 await message.reply_photo(result)
-                  
+  @app.on_message(filters.command("dominlookup"))
+  async def dominlookup(app, message):
+    
+    if message.text=="/dominlookup":
+      await message.reply_text("Please provide the domain name after the command with out https://www.")
+      
+    else:
+      await message.reply_text("Please wait while I am fetching the domain information")
+      domain=message.text.split(" ")[1]
+      result=domaininfo(domain)
+      await message.reply_text(result,parse_mode="MarkdownV2")
                       
   @app.on_message(filters.text & ~filters.command(["start", "help", "imagine","img","twitter","urlshortner","qrcode","morsecode","encrypt","decrypt","text_to_text","decrypt_image","encrypt_image","gemini","geminiapp"]))
   def text_to_text(app, message):

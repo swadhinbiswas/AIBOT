@@ -1,7 +1,7 @@
 def devdeveloper_message(): return f"""
 
 👉🏻For more information, please contact the developer.
-👉🏻Developer: @thepr0fessor
+👉🏻Developer: <a href="https://github.com/swadhinbiswas">Swadhin Biswas</a>
 Github:<a href="https://github.com/swadhinbiswas/AIBOT"> link</a> 
 
 
@@ -12,16 +12,38 @@ Github:<a href="https://github.com/swadhinbiswas/AIBOT"> link</a>
 def strat_maessage(name):
   
   return f"""<b><i>Hi! @{name}👋 </i>
-                       I am The Professor The BOT</b>
-<b><i>I can help you with the following things:</i> </b>
-<b> 🖼 I can create images from text</b>.
-<b> 🧾I can create text from images.</b>
-<b> 🎉 I can create memes.</b>
-<b> 📚I can translate text.</b>
-<b> I can generate text from audio.🎙</b>
-<b> I can generate audio from text.📒🎙</b>
+ I am The Professor The BOT</b>\n
+<b><i>I can help you with the following things:</i> </b>\n
+<b> I can create images from text</b>.\n
+<b> I can create text from images.</b>\n
+<b> I can create memes.</b>
+<b> I can translate text.</b>
+<b> 🎙 I can generate text from audio.</b>
+<b> I can generate audio from text.</b>
 <b> I can manupulate images.</b>
-<b> I can generate text from text.</b>
+<b> I can  Unlock PDF.</b>
+<b> I can  Word to PDF.</b>
+<b> I can  Exel to PDF.</b>
+<b> I can  Proteted PDF.</b>
+<b> I can  Encryption File.</b>
+<b> I can  Decryption File.</b>
+<b> I can  Generate QR code.</b>
+<b> I can  Convert Morse code.</b>
+<b> I can  Convert Morse code to text.</b>
+<b> I can  Extract text from image.</b>
+<b> I can  Download twitter video.</b>
+<b> I can  Download youtube video.</b>
+<b> I can  Download facebook video.</b>
+<b> I can  Download instagram video.</b>
+<b> I can  Download tiktok video.</b>
+<b> I can Find Email Across The Internet.</b>
+<b> I can ScreenShort From Website.</b>
+<b> I can  Find Domain Information.</b>
+<b> I can  Find IP Information.</b>
+<b> I can  Web to PDF.</b>
+
+
+
 
 <i>{devdeveloper_message()}</i>
 

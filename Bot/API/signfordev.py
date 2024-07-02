@@ -3,17 +3,12 @@ from colorama import Fore, Back, Style
 
 def printtext():
   
-  print(r"""
+  print(Fore.RED + Style.BRIGHT + r"""
   __  __        _____       _           _   
- |  \/  |      |  __ \     | |         | |  
+ |  \/  |      |  __ \     | |         | |   
  | \  / |_ __  | |__) |___ | |__   ___ | |_ 
  | |\/| | '__| |  _  // _ \| '_ \ / _ \| __|
  | |  | | |    | | \ \ (_) | |_) | (_) | |_ 
  |_|  |_|_|    |_|  \_\___/|_.__/ \___/ \__|
                                              
                                              """)
-  
-  
-
-
-printtext()

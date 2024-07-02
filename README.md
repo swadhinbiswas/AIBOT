@@ -24,9 +24,9 @@ This is a Telegram bot built using Pyrogram that offers a variety of creative an
 # Checklist
 
 ## AI MODEL:
-- [ ] Gemini
+- [x] Gemini
 - [ ] ChatGpt
-- [ ] Object Detection
+- [x] Object Detection
 
 ## Images & videos
 - [x] Text To Image
@@ -38,9 +38,11 @@ This is a Telegram bot built using Pyrogram that offers a variety of creative an
 - [ ] Word to PDF
 - [ ] Exel to PDF
 - [ ] Proteted PDF
-- [ ] Encryption File
+- [ ] Encryption File 
 
 
+## Security
+- [] Face Search 
 
 
 

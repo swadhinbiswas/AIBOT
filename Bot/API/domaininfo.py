@@ -1,6 +1,6 @@
 import requests
 from Bot.settings.setting import settings 
-
+import asyncio
 
 """
 
@@ -9,7 +9,7 @@ Onece a jocker Always a jocker
  """
 
 
-def format_data(data):
+async def format_data(data):
     formatted_data = []
 
     formatted_data.append(f"### Domain Information\n\n- **Domain**: {data['domain']}\n")
@@ -87,11 +87,11 @@ def format_data(data):
   
 
 
-def domaininfo(domain:str):
+async def domaininfo(domain:str):
   try:
         url=f"""https://host.io/api/full/{domain}?token={settings.HOST_API}"""
         
-        response=requests.get(url)
+        response=await requests.get(url)
         
         data=response.json()
         finaaldata=format_data(data)

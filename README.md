@@ -98,6 +98,11 @@ For more information, please contact the developer:
 
 ![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/username/repository&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)
 
+# Demo
+![alt text](<Screenshot from 2024-07-03 01-22-25.png>)
+![alt text](<Screenshot from 2024-07-03 01-21-51.png>)
+![alt text](<Screenshot from 2024-07-03 01-26-39.png>)
+![alt text](<Screenshot from 2024-07-03 01-33-49.png>)
 
 # HOST
 
@@ -106,5 +111,39 @@ For more information, please contact the developer:
 
 ![Render](https://ml.globenewswire.com/Resource/Download/19618237-eb42-4ed2-b7a1-1f56419d1279)
 
+
 ## step:1
-<b> fork the repo and connect your 
+<b> **COMMING SOON** </b>
+
+
+## On docker
+
+
+**1. Installation Requirements**
+* **Clone the repository:** 
+[if you want your own just fork and then clone ]
+```
+git clone https://github.com/swadhinbiswas/AIBOT && cd AIBOT
+```
+
+* **Install dependencies:**
+
+  * **Debian-based systems:**
+
+    ```
+    sudo apt install python3 python3-pip
+    ```
+
+  * **Arch and derivatives:**
+
+    ```
+    sudo pacman -S docker python
+    ```
+
+* **Install additional dependencies for setup scripts:**
+
+  ```
+  pip3 install -r requirements.txt
+  ```
+
+

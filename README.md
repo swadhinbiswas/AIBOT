@@ -1,4 +1,4 @@
-# AIBOT
+# AIBOT[BETA]
 An advanced, versatile chatbot enhancing user interactions and automation on Telegram.
 ## AI-Powered Telegram Bot with Pyrogram
 

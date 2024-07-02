@@ -3,4 +3,4 @@ WORKDIR /app
 COPY . .
 RUN pip install -r requirements.txt
 
-CMD ["bash", "start.sh"]
+CMD ["python", "main.py"]

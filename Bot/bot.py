@@ -1,5 +1,5 @@
 from pyrogram import Client, filters
-from pyrogram.types import MenuButtonCommands
+# from pyrogram.types import MenuButtonCommands
 from Bot.settings.setting import settings
 from Bot.BotFunction.urlshortner import UrlShortner
 from Bot.API.photogen2 import text_to_image
@@ -7,7 +7,7 @@ from Bot.API.photogen1 import text_to_stabilityimage
 from Bot.API.texttotext import texttotext
 from Bot.BotFunction.twitterdounloader import twitter_download
 from Bot.BotFunction.helper import help_message, strat_maessage, imagine_message,twitter_message
-from Bot.API.Geminiapp import Geminiapp
+# from Bot.API.Geminiapp import Geminiapp
 import os
 from Bot.BotFunction.urlshortner import UrlShortner
 from Bot.BotFunction.morsecode import txttomorsecode

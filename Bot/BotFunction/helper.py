@@ -1,161 +1,98 @@
-def devdeveloper_message(): return f"""
-
-👉🏻For more information, please contact the developer.
-👉🏻Developer: <a href="https://github.com/swadhinbiswas">Swadhin Biswas</a>
-Github:<a href="https://github.com/swadhinbiswas/AIBOT"> link</a> 
-
-
+def devdeveloper_message():
+    return f"""
+💻 <b>Developer:</b> <a href="https://github.com/swadhinbiswas">Swadhin Biswas</a>
+🔗 <a href="https://github.com/swadhinbiswas/AIBOT">GitHub Repository</a>
 """
-
-
 
 def strat_maessage(name):
-  
-  return f"""<b><i>Hi! @{name}👋 </i>
- I am The Professor The BOT</b>\n
-<b><i>I can help you with the following things:</i> </b>\n
-<b> I can create images from text</b>.\n
-<b> I can create text from images.</b>\n
-<b> I can create memes.</b>
-<b> I can translate text.</b>
-<b> 🎙 I can generate text from audio.</b>
-<b> I can generate audio from text.</b>
-<b> I can manupulate images.</b>
-<b> I can  Unlock PDF.</b>
-<b> I can  Word to PDF.</b>
-<b> I can  Exel to PDF.</b>
-<b> I can  Proteted PDF.</b>
-<b> I can  Encryption File.</b>
-<b> I can  Decryption File.</b>
-<b> I can  Generate QR code.</b>
-<b> I can  Convert Morse code.</b>
-<b> I can  Convert Morse code to text.</b>
-<b> I can  Extract text from image.</b>
-<b> I can  Download twitter video.</b>
-<b> I can  Download youtube video.</b>
-<b> I can  Download facebook video.</b>
-<b> I can  Download instagram video.</b>
-<b> I can  Download tiktok video.</b>
-<b> I can Find Email Across The Internet.</b>
-<b> I can ScreenShort From Website.</b>
-<b> I can  Find Domain Information.</b>
-<b> I can  Find IP Information.</b>
-<b> I can  Web to PDF.</b>
+    return f"""🎓 <b>Hi @{name}! I'm The Professor Bot</b> 🤖
 
+🌟 <b>What I can do:</b>
+🎨 Text → Image Generation
+📖 Image → Text Reading
+😂 Meme Creation
+🌐 Text Translation
+🎙️ Audio → Text / Text → Audio
+📄 PDF Operations (Unlock/Convert)
+🔐 File Encryption/Decryption
+🔗 QR Code Generation
+📡 Morse Code Conversion
+📱 Social Media Downloads
+🌍 Domain & IP Information
+📸 Website Screenshots
 
-
-
-<i>{devdeveloper_message()}</i>
-
-
-
+{devdeveloper_message()}
 """
-
-
-
 
 def help_message(name):
-  return f"""<b><i>Hi! @{name}👋 </i>
-<b>👉🏻Here are the commands you can use:</b>
-<b>
-cmd : /start[To start the bot]
-cmd : /help[To get help]
-cmd : /imagine [To convert text to image]
-cmd : /img [To convert image to text]
-cmd : /meme [To create meme]
-cmd : /translate [To translate text]
-cmd : /audio [To convert text to audio]
-cmd : /audio[dalle] [To convert audio to text]
-cmd : /twitter [To download twitter video]
-cmd : /qrcode [To generate qr code]
-cmd : /morsecode [To convert text to morse code]
-cmd : /morsedecode [To convert morse code to text]
-cmd : /ocr [To extract text from image]
-cmd : /encrypt [To encrypt text]
-cmd : /decrypt [To decrypt text]
-</b>
-<i>{devdeveloper_message()}</i>
+    return f"""📚 <b>Hi @{name}! Commands Menu</b> 🤖
 
+🚀 <b>Quick Commands:</b>
+• <code>/start</code> - Start the bot
+• <code>/help</code> - Show this menu
+• <code>/imagine</code> - Text → Image
+• <code>/img</code> - Image → Text
+• <code>/meme</code> - Create memes
+• <code>/translate</code> - Translate text
+• <code>/audio</code> - Audio conversion
+• <code>/twitter</code> - Download videos
+• <code>/qrcode</code> - Generate QR codes
+• <code>/encrypt</code> - Encrypt text
+• <code>/decrypt</code> - Decrypt text
 
-"""
-
-
-
-
-def imagine_message(name):
-   return f"""<b><i>Hi! @{name}👋 </i></b>
-Please enter the text you want to convert to image.
-
-<b>👉🏻Example:</b>
-
-/imagine A beautiful day in the city.
-or /imagine2 A beautiful day in the city.
-
-
-<i>{devdeveloper_message()}</i>
-
+{devdeveloper_message()}
 """
 
 def imagine_message(name):
-   return f"""<b><i>Hi! @{name}👋 </i></b>
-Please enter the text you want to convert to image.
+    return f"""🎨 <b>Hi @{name}! Image Generator</b> ✨
 
-<b>👉🏻Example:</b>
+💡 <b>Enter text to create an image:</b>
 
-/imagine A beautiful day in the city.
-or /imagine2 A beautiful day in the city.
+<b>Examples:</b>
+• <code>/imagine A beautiful sunset over mountains</code>
+• <code>/imagine2 Futuristic city at night</code>
 
-
-<i>{devdeveloper_message()}</i>
-
+{devdeveloper_message()}
 """
 
 def meme_message(name):
-  return f"""<b><i>Hi! @{name}👋 </i>
-Please enter the text you want to convert to meme.
-<b>👉🏻Example:</b>
+    return f"""😂 <b>Hi @{name}! Meme Creator</b> 🎭
 
-/meme A beautiful day in the city.
+🎨 <b>Enter your meme text:</b>
 
-<i>{devdeveloper_message()}</i>
+<b>Example:</b>
+<code>/meme When you finally fix that bug</code>
 
-
+{devdeveloper_message()}
 """
 
-def translate_message(name):return f"""<b><i>Hi! @{name}👋 </i>
-if you want to translate text, please enter the text you want to translate.
-<b>👉🏻Example:</b>
+def translate_message(name):
+    return f"""🌐 <b>Hi @{name}! Text Translator</b> 🔄
 
+🗣️ <b>Enter text to translate:</b>
 
-/translate A beautiful day in the city.
+<b>Example:</b>
+<code>/translate Hello, how are you today?</code>
 
-<i>{devdeveloper_message()}</i>
-
+{devdeveloper_message()}
 """
 
-def audio_message(name): return f"""<b><i>Hi! @{name}👋 </i>
-Please enter the text you want to convert to audio.
-<b>👉🏻Example:</b>
+def audio_message(name):
+    return f"""🎙️ <b>Hi @{name}! Audio Converter</b> 🔊
 
-send me the audio file you want to convert to text.
-than replay with  the command /audio to convert audio to text.
+🎵 <b>Send me an audio file</b>
+Then reply with <code>/audio</code> to convert to text
 
-
-<i>{devdeveloper_message()}</i>
-
+{devdeveloper_message()}
 """
 
-def twitter_message(name): return f"""<b><i>Hi! @{name}👋 </i>
-Please Provide Me a link of the twitter video you want to download.
+def twitter_message(name):
+    return f"""📱 <b>Hi @{name}! Video Downloader</b> ⬇️
 
-<b>👉🏻Example:</b>
+🔗 <b>Send me a Twitter video link:</b>
 
- cmd : /twitter <link of the twitter >
+<b>Example:</b>
+<code>/twitter https://twitter.com/user/status/123456</code>
 
-
-
-<i>{devdeveloper_message()}</i>
-
+{devdeveloper_message()}
 """
-
-

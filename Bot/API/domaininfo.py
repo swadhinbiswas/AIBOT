@@ -1,12 +1,14 @@
 import requests
-from Bot.settings.setting import settings 
+from Bot.settings.setting import settings
 import asyncio
 
 """
 
 
-Onece a jocker Always a jocker
- """
+Once a joker, always a joker
+This code is part of the Bot API for fetching domain information.
+It retrieves detailed information about a domain, including web data, DNS records, IP information, and related data.
+"""
 
 
 async def format_data(data):
@@ -82,25 +84,21 @@ async def format_data(data):
         formatted_data.append(f"  - {redirect['value']} ({redirect['count']} occurrences)")
 
     return "\n".join(formatted_data)
-  
-  
-  
+
+
+
 
 
 async def domaininfo(domain:str):
   try:
         url=f"""https://host.io/api/full/{domain}?token={settings.HOST_API}"""
-        
-        response=await requests.get(url)
-        
+
+        response=requests.get(url)
+
         data=response.json()
         finaaldata=format_data(data)
-        
+
         return finaaldata
-        
+
   except Exception as e:
         return e
-
-
-
-

@@ -4,9 +4,9 @@ key= Fernet.generate_key()
 
 with open("key.key", "wb") as key_file:
     key_file.write(key)
-    
+
 def load_key():
-    return open("key.key", "rb").read
+    return open("key.key", "rb").read()
 
 
 
@@ -27,12 +27,10 @@ def encrypt_image(image):
     f = Fernet(key)
     with open(image, "rb") as file:
         return f.encrypt(file.read()).decode()
-    
+
 
 def decrypt_image(image):
     key = load_key()
     f = Fernet(key)
     with open(image, "rb") as file:
         return f.decrypt(file.read()).decode()
-
-  
